@@ -90,12 +90,4 @@ and functions written for the project.
   * [102-result](./102-result): Text file containing the largest palindrome made from a
   product of two three-digit numbers.
 
-## 11. Crackme5
-  * [103-keygen.c](./103-keygen.c): C function that generates passwords for the
-  [crackme5](https://github.com/holbertonschool/0x16.c) executable.
-  * Usage of the crackme: `./crackme5 username key`
-  * Usage of the keygen: `./keygen5 username`
 
-## Authors :black_nib:
-
-- [Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
