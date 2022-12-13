@@ -5,12 +5,12 @@ them and how to use them with `$LD_LIBRARY_PATH`, `nm`, `ldd`, and `ldconfig`.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALXSchool.
 
 ## Tasks :page_with_curl:
 
 ## 0. A library is not a luxury but one of the necessities of life
-  * [libholberton.so](./libholberton.so): C dynamic library containing all the functions
+  * [libalx.so](./libhalx.so): C dynamic library containing all the functions
   listed below:
     * `int _putchar(char c);`
     * `int _islower(int c);`
@@ -33,8 +33,8 @@ them and how to use them with `$LD_LIBRARY_PATH`, `nm`, `ldd`, and `ldconfig`.
     * `char *_strpbrk(char *s, char *accept);`
     * `char *_strstr(char *haystack, char *needle);`
 
-  * [holberton.h](./holberton.h): Header file containing the prototypes of all functions
-  included in `libholberton.so`.
+  * [main.h](./main.h): Header file containing the prototypes of all functions
+  included in `libalx.so`.
 
 ## 1. Without libraries what have we? We have no past and no future
   * [1-create_dynamic_lib.sh](./1-create_dynamic_lib.sh): Bash script that creates a
@@ -51,6 +51,4 @@ them and how to use them with `$LD_LIBRARY_PATH`, `nm`, `ldd`, and `ldconfig`.
     * `int mod(int a, int b);`
     
     
-    ## Authors :black_nib:
-
-- [Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
+   
