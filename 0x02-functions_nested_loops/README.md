@@ -1,1 +1,1 @@
-This is a requirement fpr the checker
+This is a requirement for the checker
