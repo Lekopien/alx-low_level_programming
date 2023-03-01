@@ -1,5 +1,5 @@
 #Save in a variables the compiler to be used and files
 CC=gcc
-SRC= main.c holberton.c
+SRC= main.c school.c
 all: $(SRC)
-	$(CC) $(SRC) -o holberton
+	$(CC) $(SRC) -o school
