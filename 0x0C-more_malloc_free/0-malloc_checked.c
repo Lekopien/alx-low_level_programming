@@ -1,16 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 void *malloc_checked(unsigned int b)
 {
-    void *ptr = malloc(b);
+	void *n;
 
-    if (ptr == NULL)
-    {
-        fprintf(stderr, "Memory allocation failed\n");
-        exit(98);  // Terminate the process with status 98
-    }
+	n = malloc(b);
 
-    return ptr;
+	if (n == NULL)
+		exit(98);
+	return (n);
 }
