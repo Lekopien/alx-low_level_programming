@@ -4,11 +4,13 @@
 #include <limits.h>
 void *malloc_checked(unsigned int b)
 {
-	void *n;
+    void *ptr = malloc(b);
 
-	n = malloc(b);
+    if (ptr == NULL)
+    {
+        fprintf(stderr, "Memory allocation failed\n");
+        exit(98);  // Terminate the process with status 98
+    }
 
-	if (n == NULL)
-		exit(98);
-	return (n);
+    return ptr;
 }
