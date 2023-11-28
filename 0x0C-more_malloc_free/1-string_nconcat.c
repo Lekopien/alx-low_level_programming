@@ -1,43 +1,51 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1, len2, i;
-	char *ptr, *ret;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-	if (!s1)
+	if (s1 == NULL)
 		s1 = "";
-	if (!s2)
+
+	if (s2 == NULL)
 		s2 = "";
 
-	for (len1 = 0, ptr = s1; *ptr; ptr++)
-		len1++;
-	for (len2 = 0, ptr = s2; *ptr; ptr++)
-		len2++;
-	if (n > len2)
-		n = len2;
+	while (s1[size1] != '\0')
+	{
+		size1++;
+	}
 
-	ret = malloc((len1 + n + 1) * sizeof(char));
-	if (!ret)
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
 		return (0);
 
-	ptr = ret;
-	while (*s1)
-		*ptr++ = *s1++;
-	i = 0;
-	while (i < n)
+	for (i = 0; i < size1; i++)
 	{
-		*ptr++ = s2[i++];
+		p[i] = s1[i];
 	}
-	*ptr = 0;
 
-	return (ret);
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+return (p);
 }
-
